@@ -1,0 +1,13 @@
+[project]
+name = "agent"
+version = "0.1.0"
+description = "agent framework"
+readme = "README.md"
+requires-python = "==3.13.*"
+dependencies = [
+    "numpy",
+    "ollama>=0.6.1",
+    "requests>=2.33.1",
+    "discord-py>=2.7.1",
+    "ddgs>=9.14.1",
+]
