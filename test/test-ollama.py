@@ -9,6 +9,7 @@ response:ChatResponse = chat(
     model='gemma4:e4b', think=True,
     # model='lfm2:24b', think=False,
     stream=False,
+    keep_alive=-1,
     messages=[
         {
         'role': 'user',
@@ -17,7 +18,7 @@ response:ChatResponse = chat(
         },
     ]
 )
-
+# print(response)
 # print(response['message']['content'])
 print(response.message.content)
 print(f"Done: {response.done}")
