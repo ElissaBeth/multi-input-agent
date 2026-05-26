@@ -5,7 +5,7 @@ from ollama import chat, ChatResponse, Image
 class ModelSingle:
     def __init__(self, db_folder, sys_prompt):
         self.db_folder, self.sys_prompt = db_folder, sys_prompt
-        self.model = "gemma4:e4b"
+        self.model = "gemma4:e2b"
 
     ## module
     def load_proc(self, proc_ctrl, proc_status, proc_stop, queue_ctx, queue_gen):

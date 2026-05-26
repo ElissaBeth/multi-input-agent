@@ -10,7 +10,7 @@ class WriteRndSynopsys:
         'Use markup only (no html) to format the text for display. ' \
         'Base the article on the word "{word}".'
 
-        with open(db_folder+'/american-english') as f:
+        with open(db_folder+'/american-english.txt') as f:
             self.words = [w.strip() for w in f]
 
     ## module
